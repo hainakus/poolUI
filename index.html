@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining Pool Dashboard</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold">Mining Pool Dashboard</h1>
+        <div class="grid grid-cols-2 gap-4 mt-4">
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="bg-white rounded-lg shadow-lg p-4 mt-4">
+                    <h2 class="text-xl font-bold mb-2">Mining Statistics</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="text-center">
+                            <h3 class="text-lg font-semibold">Total Hashrate</h3>
+                            <p id="totalHashrate" class="text-2xl font-bold">0 MH/s</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-semibold">Pool Hashrate</h3>
+                            <p id="poolHashrate" class="text-2xl font-bold">0 MH/s</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-semibold">Active Miners</h3>
+                            <p id="activeMiners" class="text-2xl font-bold">0</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="text-lg font-semibold">Current Block</h3>
+                            <p id="currentBlock" class="text-2xl font-bold">0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <h2 class="text-xl font-bold mb-2">Mining Chart</h2>
+                <canvas id="miningChart"></canvas>
+            </div>
+        </div>
+        <!-- ... (previous HTML content) -->
+        <div class="bg-white rounded-lg shadow-lg p-4 mt-4">
+            <h2 class="text-xl font-bold mb-2">Latest Blocks</h2>
+            <table class="w-full table-auto">
+                <thead>
+                <tr>
+                    <th class="px-4 py-2">Block Number</th>
+                    <th class="px-4 py-2">Hash</th>
+                    <th class="px-4 py-2">Miner</th>
+                </tr>
+                </thead>
+                <tbody id="latestBlocks">
+                <!-- Rows for latest blocks will be added here dynamically -->
+                </tbody>
+            </table>
+        </div>
+        <!-- ... (remaining HTML content) -->
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>
+

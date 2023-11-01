@@ -1,0 +1,39 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    background-color: #f7fafc;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+/* Customize styles as needed */
+
+
+h3 {
+    color: #4299E1;
+}
+
+p {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #e2e8f0;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4299E1;
+    color: #ffffff;
+}
